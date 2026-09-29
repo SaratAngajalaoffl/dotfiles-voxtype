@@ -1,0 +1,5 @@
+voxtype: enable the dictation daemon once per machine:
+  systemctl --user enable --now voxtype
+Then fetch the Whisper model configured in config/config.toml:
+  voxtype setup --download --model small.en
+Dictate by holding SUPER+D (bound in the hypr submodule).

@@ -1,0 +1,31 @@
+# Voxtype configuration. Full reference: `voxtype config --help` / upstream docs.
+# Recording is driven by Hyprland keybinds (SUPER+D, hold to talk) calling
+# `voxtype record start|stop`, so the built-in evdev hotkey is off and no
+# `input` group membership is needed.
+
+state_file = "auto"
+
+[hotkey]
+enabled = false
+
+[audio]
+device = "default"
+sample_rate = 16000
+max_duration_secs = 120
+# Pause Spotify/browsers while talking, resume afterwards.
+pause_media = true
+
+[whisper]
+model = "small.en"
+language = "en"
+
+[output]
+# wtype types straight into the focused Wayland window; falls back to the clipboard.
+mode = "type"
+fallback_to_clipboard = true
+
+[output.notification]
+on_transcription = false
+
+[text]
+filter_filler_words = true
