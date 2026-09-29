@@ -1,4 +1,4 @@
 voxtype: fetch the Whisper model configured in config/config.toml:
   voxtype setup --download --model small.en
-Dictate by holding Right Alt (bound in the hypr submodule). The daemon is
+Dictate by holding Left Alt (bound in the hypr submodule). The daemon is
 enabled by the systemd submodule (graphical-session.target.wants).
