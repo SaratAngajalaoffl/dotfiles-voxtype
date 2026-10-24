@@ -1,4 +1,5 @@
 voxtype: fetch the Whisper model configured in config/config.toml:
   voxtype setup --download --model small.en
-Dictate by holding Left Alt (bound in the hypr submodule). The daemon is
-enabled by the systemd submodule (graphical-session.target.wants).
+Dictate by holding Right Alt (bound in the hypr submodule). The daemon is
+started by Hyprland's autostart (systemctl --user start voxtype.service),
+since graphical-session.target never activates without uwsm.
