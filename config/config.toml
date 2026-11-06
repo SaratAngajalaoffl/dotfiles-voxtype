@@ -36,3 +36,10 @@ on_transcription = false
 
 [text]
 filter_filler_words = true
+
+# Case-insensitive fixes for words Parakeet mishears (it has no vocabulary prompt).
+[text.replacements]
+"walks types" = "VoxType"
+"walks type" = "VoxType"
+"vox type" = "VoxType"
+"box type" = "VoxType"
