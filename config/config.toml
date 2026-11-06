@@ -5,6 +5,9 @@
 
 state_file = "auto"
 
+# Parakeet (ONNX, CUDA on the RTX 4070) — more accurate than Whisper small.en.
+engine = "parakeet"
+
 [hotkey]
 enabled = false
 
@@ -15,6 +18,10 @@ max_duration_secs = 30
 # Pause Spotify/browsers while talking, resume afterwards.
 pause_media = true
 
+[parakeet]
+model = "parakeet-tdt-0.6b-v3"
+
+# Kept as a fallback: set engine = "whisper" (and ExecStart back to voxtype-vulkan).
 [whisper]
 model = "small.en"
 language = "en"
