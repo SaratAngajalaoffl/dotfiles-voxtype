@@ -21,11 +21,6 @@ pause_media = true
 [parakeet]
 model = "parakeet-tdt-0.6b-v3"
 
-# Kept as a fallback: set engine = "whisper" (and ExecStart back to voxtype-vulkan).
-[whisper]
-model = "small.en"
-language = "en"
-
 [output]
 # wtype types straight into the focused Wayland window; falls back to the clipboard.
 mode = "type"
