@@ -14,7 +14,8 @@ enabled = false
 [audio]
 device = "default"
 sample_rate = 16000
-max_duration_secs = 30
+# Hard cap per recording; at the cap voxtype stops and transcribes mid-sentence.
+max_duration_secs = 300
 # Pause Spotify/browsers while talking, resume afterwards.
 pause_media = true
 
